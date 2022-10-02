@@ -10,7 +10,7 @@ public class A101Page {
     public A101Page(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-//*[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']
+
     @FindBy (xpath = "//*[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']")
     public WebElement cookie;
 
@@ -35,7 +35,7 @@ public class A101Page {
     @FindBy (xpath = "//*[@class='selected-variant-text']")
     public WebElement secilenRenk;
 
-    @FindBy (xpath = "//i[@class='icon-sepetekle']")
+    @FindBy (xpath = "//*[@class='icon-sepetekle']")
     public WebElement sepeteEkle;
 
     @FindBy (xpath = "(//*[@title='Sepeti Görüntüle'])[2]")
@@ -89,5 +89,7 @@ public class A101Page {
     @FindBy (xpath = "//*[@class='order-complete']")
     public WebElement siparisiTamamla;
 
+    @FindBy (xpath = "//*[@class='payment-tab payment-tab-masterpass js-payment-tab active']")
+    public WebElement odemeSayfasindayiz;
 
 }
